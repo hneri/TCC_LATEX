@@ -1,0 +1,72 @@
+\chapter*[MÉTRICAS: UMA VISÃO SOBRE CUSTO, ESCOPO E TEMPO]{MÉTRICAS: UMA VISÃO SOBRE CUSTO, ESCOPO E TEMPO}
+\addcontentsline{toc}{chapter}{MÉTRICAS: UMA VISÃO SOBRE CUSTO, ESCOPO E TEMPO}
+
+\section{CONTEXTUALIZAÇÃO}
+Um elemento-chave de qualquer processo de engenharia é a medição, afirma PRESSMAN (2011). De acordo com a norma ISO/IEC 15939 (2007) medição é um conjunto de operações que tem o objetivo de determinar o valor de uma medida. Já PRESSMAN (2011 apud FENTON, 1991), dissertam que medição é o processo pelo qual números ou símbolos são anexados aos atributos de entidades no mundo real para defini-los de acordo com regras claramente estabelecidas. Nas ciências físicas, medicina, economia e mais recentemente nas ciências sociais, podemos medir os atributos antes considerados incomensuráveis... É claro que essas medidas não são tão refinadas como muitas feitas nas ciências físicas, mas existem [e são tornadas decisões importantes baseadas nelas]. Percebemos que a obrigação de tentar "medir o incomensurável" para melhorar nossa compreensão de entidades particulares é tão poderosa na engenharia de software quanto em qualquer outra disciplina.
+A norma ISO/IEC 15939 (2007) define quatro atividades de um processo de medição: 1) Estabelecer e sustentar o compromisso de medição; 2) Planejar o processo de medição; 3) Realizar o processo de medição; e 4) Avaliar a medição. Dentro do processo de medição existem várias tarefas que devem ser alcançar para garantir a execução correta do processo e para sustentar um conjunto de princípios básicos que orientem a definição de métricas de software. (PRESSMAN, 2011)
+PRESSMAN (2011) diferencia os termos medidas, métricas e indicadores dizendo que: 
+\color{{red}Sob o contexto de engenharia de software, medida proporciona uma indicação quantitativa da extensão, quantidade, capacidade ou tamanho de algum atributo de um produto ou processo. Uma métrica de software relaciona as medidas individuais de alguma maneira (por exemplo, o número médio de erros encontrados por revisão ou o número médio de erros encontrados por teste de unidade). Um engenheiro de software coleta medidas e desenvolve métricas para obter indicadores. Um indicador é uma métrica ou combinação de métricas que proporcionam informações sobre o software, em um projeto de software ou no próprio produto. Um indicador proporciona informações que permitem ao gerente de projeto ou aos engenheiros de software ajustar o processo, o projeto ou o produto para incluir melhorias.}
+De acordo com a norma 1061 (ANSI/IEEE, 1998), uma métrica é uma função mensurável cujas entradas são os dados relacionados ao software, tendo como resultado corresponde a um único valor numérico, que pode ser interpretado como o grau de qualidade do software. O objetivo de “medir” um software é poder avaliá-lo ao longo do seu ciclo de vida, a fim de saber se os requisitos de qualidade estão sendo cumpridos.
+Ainda o Institute of Eletrical and Electronics Engineers (IEEE) afirma que as métricas de software são classificadas como diretas ou derivadas. Onde as métricas diretas não dependem de nenhum atributo e não precisam ser validadas. As métricas derivadas são definidas a partir de outros atributos e necessitam de validação. Ambas as métricas possuem o objetivo de proporcionar uma informação quantitativa sobre um processo ou produto, sendo importantes às atividades de gerenciamento dos projetos (ANSI/IEEE, 1998).
+SPIES & RUIZ (2012 apud KAN, 2002) apresentam três categorias as quais as métricas de software podem ser classificadas:
+\color{{red}[...] processo, produto, e projeto. As métricas de processo têm por objetivo obter controle sobre o processo de desenvolvimento e monitorar como o trabalho vem sendo feito como, por exemplo, a eficiência de remoção de defeitos, o tempo de resposta a defeitos, e a aderência ao processo. As métricas de produto têm relação com as características inerentes do produto desenvolvido. Exemplos englobam o tamanho do código, a complexidade, a densidade de defeitos entre outras. Já as métricas de projeto visam monitorar o projeto considerando atributos como o tamanho do time, produtividade, cronograma e esforço, de modo a manter o projeto controlado e dentro das expectativas.{
+A seguir é apresentada duas variações de aplicação de uma técnica para coleta e interpretação de métricas de gerenciamento de projetos, as quais no contexto desse trabalho engloba custo, escopo e tempo.
+
+\section{EVM TRADICIONAL}
+O PMI (2008) define o gerenciamento do valor agregado (GVA – EVM em Inglês) como um método comumente usado para medir desempenho e tem a característica de integrar as medidas de escopo, custos e tempo(prazos), comparando-os com o trabalho concluído até a data da avaliação, auxiliando a equipe de gerenciamento a avaliar e medir o desempenho e progresso do projeto.
+Já Vargas (2011) define o EVM como a avaliação entre o que foi obtido em relação ao que foi realmente gasto e ao que se planejava gastar, onde se propõe que o valor a ser agregado inicialmente por uma atividade é o custo orçado para ela. Na medida em que cada atividade ou tarefa de um projeto é realizada, aquele valor inicialmente orçado para a atividade passa, agora, a constituir o Valor Agregado do projeto.
+Segundo FLEMING & KOPPELMAN (1998) muitas empresas privadas estão tendo dificuldades para empregar esses rígidos critérios em seus projetos. Suas percepções são de que existem muitas exigências que não agregam valor ao projeto.
+O EVM monitora três elementos básicos: 
+
+TABELA
+
+O VP, CA e o VA podem ser apresentados em um gráfico capaz de mostrar as variações existentes entre eles. Se não houver variações, todas as linhas do gráfico ficarão sobrepostas, ou seja, serão iguais, o que indica que o projeto está evoluindo conforme planejado. Na (PMI, 2008)Erro: Origem da referência não encontrada é apresentado um exemplo.
+A variação dos valores planejado e agregado e do custo atual resultam em medidas de desempenho, a partir da linha de base aprovada, que também serão monitoradas e demonstra interpretações bastante relevantes ao gerenciamento do valor agregado:
+
+TABELA
+
+
+Os valores da VP e VC podem ser convertidos em indicadores de desempenho para refletir o desempenho dos custos e dos prazos de qualquer projeto (PMI, 2008). As variações e os índices são úteis para determinar o andamento do projeto e também para fornecer uma base para a estimativa de custos e prazos. 
+FLEMING & KOPPELMAN (1998) destacam que o conceito de valor agregado surgiu no Departamento de Defesa Americano, o qual desenvolveu uma diretiva que impôs 35 critérios de controle de sistemas baseado em custo e cronograma. Além disso, afirmam que embora algumas pessoas considerem esses 35 critérios uma idéia utópica a ser implementada por todas as empresas, muitas pessoas dentro das da industria privada tem enfrentado dificuldade em empregar esses critérios rigidos em todos seus projetos – principalmente em projetos comerciais.
+FLEMING & KOPPELMAN (1998) ainda citam que a percepção das pessoas que tentaram implementar o GVA é de que há muitos critérios que não adicionam valor para que a técnica seja empregada universalmente em todos os projetos. Quando bem aplicada, pode dar ao gerente de projeto um sinal alerta prévio de que o projeto está se encaminhando para uma extrapolação do custo a menos que ações imediatas sejam tomadas. E afirmam que o mundo do software precisa de algo menos formal do que esses 35 critérios, algo que possa ser adaptado para as características de cada projeto.
+VARGAS (2009) disserta que no que diz respeito ao valor da técnica de valor agregado, os resultados encontrados, no artigo escrito, são enquadrados em uma faixa de pouco valor, ficando abaixo de praticamente todas as técnicas analisadas, o que sugere que a popularidade da técnica de valor agregado não retrata sua aplicabilidade ou valor. E conclui que na indústria encontra-se notada dificuldade tanto na coleta dos dados quanto na baixa velocidade da geração da informação.
+Para justificar essa afirmação FLEMING & KOPPELMAN (1999, apud VARGAS, 2009) propõem, também, que outro fato de dificuldade encontrada consiste no detalhamento adequado da EAP que pode ser extensa, gerando um custo de controle alto, ou pequena, que pode representar uma diminuição na precisão dos dados de custo atual e prazo.
+Para comprovar PETERSON & OLIVER (2001, apud VARGAS, 2009), afirma que há uma baixa aplicação do Gerenciamento de Valor Agregado na área de tecnologia e marketing, onde aspectos relacionados ao trabalho criativo atuam como variantes do escopo previamente definido, tornando sua aplicabilidade limitada e diretamente relacionada à estabilidade do escopo definido.
+PETERSON & OLIVER (2001, apud VARGAS, 2009) afirmam que:
+\color{{red}[...] com o crescimento de projetos de curto prazo, com equipes reduzidas e escopo genericamente definido, onde a definição do trabalho restante é definida à medida que os trabalhos atuais ocorrem, a análise de Valor Agregado, conforme proposto pela Instrução 5000.2R (DOD, 1997) e pela ANSI/EIA 748, torna-se inviável, devido às projeções imprecisas decorrentes do escopo mal definido, bem como aos custos percebidos pelos empreendedores como elevados.}
+Para dar relevância para esse Trabalho de Conclusão de Curso é preciso fundamentar os conceitos de Gerenciamento de Valor Agregado Ágil, comumente utilizado como AgileEVM.
+
+\section{AGILEEVM}
+Baseado nas metodologias ágeis que enfatizam um planejamento multi-nível e incremental, e desencorajam um planejamento completo e detalhado, SULAIMAN, BARTON, & BLACKBURN (2006) afirmam que a técnica EVM Tradicional, que assume um completo planejamento dos Pacotes de Trabalho de um projeto e depois atribuem custo e duração a estes pacotes, tem a sua utilização em projetos ágeis sido questionada.
+Para resolver esse questionamento, SULAIMAN, BARTON, & BLACKBURN (2006) definem o Agile Earned Value Management – AgileEVM (em português Gerenciamento Ágil do Valor Agregado): um conjunto simplificado de cálculos de valor agregado adaptado do EVM Tradicional usando métricas de times ágeis, que evidenciam a validade da adaptação do EVM Tradicional para ser usado em projetos SCRUM.
+A implementação do AgileEVM concentra-se em medir progresso no nível de release, pois é ao final de cada Sprint que se conhece o velocity da Sprint e os custos atuais. No Quadro 1 - Comparação dos termos do  é possível observar cinco itens de comparação entre o EVM Tradicional e o AgileEVM.
+
+TABELA
+
+No Quadro 2 - Parâmetros iniciais da entregaé apresentado um conjunto de métricas que auxiliam a criar  linha de base inicial para a medição de progresso do projeto, no contexto do AgileEVM.
+
+TABELA
+
+O Quadro 3 - Dados de Pontos da exibe os parâmetros coletados ao final de cada uma das sprints. Esses quatro valores são suficientes para calcular as métricas SCRUM e o AgileEVM.
+
+TABELA
+
+Para calcular o valor planejado e o valor agregado, SULAIMAN, BARTON, & BLACKBURN (2006) afirmam ser necessário ter uma medição precisa da porcentagem atual completada e a porcentagem planejada completada. O (SULAIMAN, BARTON, & BLACKBURN, 2006)Quadro 4 - Definições AgileEVM. Fonte: (SULAIMAN, BARTON, & BLACKBURN, 2006)resume as definições do AgileEVM. E o (SULAIMAN, BARTON, & BLACKBURN, 2006)Quadro 5 - Definições e Equações Padrão EVM. Fonte: (SULAIMAN, BARTON, & BLACKBURN, 2006) mostra as definições e as equações do EVM.
+
+TABELA
+
+
+TABELA
+
+Com o AgileEVM definido, SULAIMAN, BARTON, & BLACKBURN (2006) recomendam fortemente o uso desta em conjunto com o velocity da equipe e o gráfico BurnDown.
+
+\section{REPORTANDO RESULTADOS}
+O gráfico de valor agregado, como mostrado na (GRIFFITHS & CABRI, 2006)Erro: Origem da referência não encontrada, um gráfico de curva “S”, possui as informações mais relevantes para reportar e interpretar os dados do gerenciamento do valor agregado, tanto do tradicional quando do ágil. É possível acompanhar o valor planejado, o custo atual e o valor agregado, além de suas variações que contribuem para a análise de atraso ou não do projeto como foi definido na seção EVM TRADICIONAL.
+Para ilustrar os indicadores de desempenho de valor agregado, VARGAS (2011) apresentam o gráfico que pode ser visualizado na Erro: Origem da referência não encontrada.
+GRIFFITHS & CABRI (2006), utilizando-se dos conceitos do SCRUM, afirmam que a principal maneira de acompanhar progresso é através do gráficos Burn do SCRUM que se encaixam perfeitamente no contexto de AgileEVM e exemplificam com as seguintes opções:
+Gráficos BurnUp
+Esses gráficos tem a características de mostrar o crescimento da quantidade de funcionalidade concluída conforme o tempo passa. O benefício é grande, pois é fácil de entender a representação de status e taxa de recursos entregues. O que é conceitualmente equivalente ao Valor Agregado acumulado em uma data, observe a Erro: Origem da referência não encontrada que ilustra o valor planejado e o valor agregado, sendo o de linha mais grossa o valor planejado (GRIFFITHS & CABRI, 2006).
+Gráficos BurnDown
+Esse gráfico apresenta uma similaridade com o anterior, porém nesse caso, no SCRUM, ele ilustra a quantidade restante de funcionalidades do projeto.
+A (GRIFFITHS & CABRI, 2006)Erro: Origem da referência não encontrada é um gráfico que tem uma relevância alta, pois através dele é possível visualizar uma alteração do escopo do projeto, como pode ser visualizado na (GRIFFITHS & CABRI, 2006)Erro: Origem da referência não encontrada observe que entre a Sprint 1 e 2 e também entre a Sprint 2 e 3, há um crescimento do escopo do projeto e a curva BurnDown mostra que plano inicial não foi seguido, o que em projetos Ágeis é o mais comum de acontecer como mencionado na seção Erro: Origem da referência não encontrada.
+A (SULAIMAN, BARTON, & BLACKBURN, 2006)Erro: Origem da referência não encontrada ilustra como os índices de desempenho podem ser visualizados em conjunto com um gráfico de BurnDown.

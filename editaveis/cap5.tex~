@@ -1,0 +1,68 @@
+\chapter*[Introdução]{Introdução}
+\addcontentsline{toc}{chapter}{Introdução}
+
+\section{CONTEXTUALIZAÇÃO}
+O gerenciamento de projeto é uma atividade de fundamental importância em qualquer organização, pois esta atividade proporciona ao gerente\footnote{\color{{red}{Definir gerente de projeto ágil}}, e também a equipe, uma visão ampla do andamento do projeto nos pontos estratégicos de interesse da organização, do cliente e das pessoas envolvidas.
+Os projetos e seu gerenciamento são executados em um ambiente mais amplo que o do projeto propriamente dito. A compreensão desse contexto mais amplo ajuda a garantir que o trabalho seja conduzido em alinhamento aos objetivos da empresa e gerenciado de acordo com as metodologias e práticas estabelecidas pela organização. (PMI, 2008)
+A norma ISO/IEC 15939 (2007) define quatro atividades de um processo de medição: 1) Estabelecer e sustentar o compromisso de medição; 2) Planejar o processo de medição; 3) Realizar o processo de medição; e 4) Avaliar a medição.
+Métricas de software podem ser classificadas em três categorias: 1) de processo, que tem por objetivo controlar o processo de desenvolvimento; 2) de produto, relacionam com as características inerentes do produto desenvolvido; e, 3) de projeto, que monitora o projeto considerando atributos como o tamanho do time, produtividade, cronograma e esforço, de modo a manter o projeto controlado e dentro das expectativas. (SPIES & RUIZ, 2012 apud KAN, 2002)
+A técnica de gerenciamento do valor agregado (EVM, sigla em inglês) é amplamente difundida e utilizada pelas organizações para medir desempenho de projetos, em função de seus custos. As medidas de tempo, escopo e custo auxiliam o gestor a avaliar e medir o desempenho e progresso de cada um dos projetos que a organização mantém. Essas medidas são úteis para monitorar as três dimensões chave para cada pacote de trabalho\footnote{Uma entrega ou componente do trabalho do projeto no nível mais baixo de cada ramo da estrutura analítica do projeto\color{{red}{[inserir uma referencia]}}, são eles: valor planejado, valor agregado, custo real, variação de prazos e custos, além dos índices de desempenho de prazos e custos. (VARGAS R. V., 2011)
+Quando ao encontro do método SCRUM1 para gerenciamento do desenvolvimento de software, a aplicação do EVM, ao menos em sua forma clássica, esbarra em pressupostos que vão na contramão de valores e princípios adotados nos métodos ágeis (BECK, 2001), e dessa forma surge a necessidade da utilização de uma técnica adaptada do EVM, o AgileEVM.
+Quando ao encontro da prática SCRUM\footnote{\color{{red}É um framework ágil para gestão, planejamento e desenvolvimento, iterativo e incremental, de projetos de software.}} para desenvolvimento de software, a aplicação do EVM esbarra em pressupostos que vão na contramão das práticas ágeis, e dessa forma surge a necessidade da utilização de uma técnica adaptada do EVM, o AgileEVM.
+O AgileEVM utiliza-se dos mesmos conceitos do EVM tradicional, e, aplicado ao contexto de práticas ágeis no desenvolvimento de projetos de software, é capaz de colaborar para a acurácia de métricas relacionadas ao gerenciamento, em particular nas medidas de tempo, escopo e custos.
+Os gerentes de projetos sentem a necessidade de agilidade e eficiência na interpretação de dados para que seja possível tomar decisões mais consistentes ao longo da execução do projeto. Essas decisões podem ser melhor sistematizadas ao se utilizar um ambiente de Datawarehousing-DWing, apoiado por uma ferramenta que forneça e permita a manipulação das informações, facilitando as etapas de coleta, armazenamento, acesso aos dados e visualização. (RUIZ, SILVEIRA, & BECKER, 2010)
+Um banco de dados tradicional armazena dados num determinado período onde são registradas e executadas operações pré-definidas. Segundo OLIVEIRA (2007), hoje em dia, os diversos sistemas de operação, cada vez mais sofisticados, registram grandes volumes de dados sobre diversas áreas da organização e existe dificuldades em buscar informações e gerar conhecimento a partir destes dados, e essas dificuldades podem gerar prejuízos devido às oportunidades perdidas e decisões errôneas.
+Já um banco de dados de Data Warehouse armazena dados históricos e analíticos voltados à tomada de decisões o que determina um grande processamento e armazenamento dos dados, podendo envolver consultas complexas que acessem um grande número de dados, exigindo assim um eficaz sistema de acesso a dados (OLIVEIRA, 2007). O Data Warehouse é uma solução que procura de maneira flexível e eficiente tratar grandes volumes de dados e obter informações que auxiliem no processo para tomada de decisão
+Diante disso, este trabalho descreve uma proposta de coleta e visualização de métricas de custo, escopo e tempo, em projetos ágeis de software apoiado pelas ferramentas iceSCRUM (KAGILUM, 2013) e pentaho (PENTAHO, 2013).
+Este trabalho de conclusão de curso está organizado da seguinte maneira: no Capítulo 2, os conceitos relativos à Gerenciamento de Projetos é abordado, onde ocorre uma comparação entre projetos que utilizam uma abordagem tradicional de desenvolvimento e aqueles que utilizam um abordagem ágil de desenvolvimento, sendo que para a abordagem tradicional é explicitado os conceitos do Guia PMBOK, e na ágil os conceitos do SCRUM.
+No capítulo 3 se discute os conceitos relacionados à medição e coleta de métrica de software, momento em que é apresentado, e também comparado, duas técnicas de coleta e interpretação de dados de medições baseado em uma abordagem tradicional e ágil, sendo o Gerenciamento do Valor Agregado (EVM, em inglês) e o Gerenciamento do Valor Agregado Ágil (AgileEVM, em inglês) as técnicas estudadas. E por fim é apresentado as formas de reporte das métricas coletadas em ambas técnicas.
+No capítulo 4 é apresentado uma solução para a resolução do problema apresentado na seção \color{{red} atualizar seção} sendo apresentado os conceitos de um Data Warehouse, as ferramentas e o estudo realizado em cima delas para a execução da solução.
+No capítulo 5 é apresentado uma implementação inicial para reforçar a capacidade de uso em um projeto real.
+E por fim no capítulo 6 é apresentado a conclusão e no capítulo 7 os próximos passos para a execução do Trabalho de Conclusão de Curso 2.
+
+\section{JUSTIFICATIVA E/OU RELEVÂNCIA}
+A busca por informações mais realísticas e que retratem de forma mais fiel a realidade do ambiente de produção do software, e principalmente, a necessidade de correlacionar métricas de diferentes áreas do desenvolvimento em um repositório de dados centralizado e analisá-las com vistas ao suporte às decisões, corrobora com a necessidade de armazenamento de dados de projetos que, ao serem interpretadas, sejam capazes de fornecer melhores insumos para as tomadas de decisões técnicas e gerenciais.
+Nesse contexto, métricas de escopo, tempo e custo são métricas tipicamente de gerenciamento, se forem corretamente coletadas, visualizadas e consequentemente analisadas, são capazes de fornecer importantes dados gerenciais sobre a situação da produção de um determinado projeto. Embora as métricas gerenciais devam ser combinadas com as métricas de produto, de satisfação do cliente, para que uma análise gerencial seja mais eficaz, este trabalho se propõe a endereçar as questões relacionadas a métricas gerenciais de projeto.
+O desenvolvimento de software baseado em métodos ágeis, neste trabalho em particular o SCRUM, possui o foco na qualidade do produto e no valor de negócio deste para o cliente. Nesse contexto deve-se utilizar métricas que representem melhor esse domínio, sem contudo, deixar de observar e analisar as métricas de gerenciamento.
+Porém, tão importante quanto a escolha das métricas a serem coletadas, é fundamental que, de acordo com a maneira que esses dados serão interpretados, exista um correto alinhamento entre interesses do cliente, do time, do líder de desenvolvimento e do gerente de projetos.
+Outro fator relevante a se destacar está no ponto de minimização da interferência humana na coleta das métricas gerenciais, tornando essa atividade menos intrusiva possível. O objetivo aqui é não onerar ou desviar o foco do time de desenvolvimento.
+
+\section{PROBLEMA}
+Existe uma necessidade em minimizar a interferência humana na coleta de métricas de gerenciamento de projeto e também uma dificuldade em visualizar dados relacionados a produção do software. Este problema está associado à não utilização de ferramentas que favoreçam a automatização do processo de coleta de métricas e, também, o fato das métricas estarem em diferentes ferramentas (repositório de código, testes, custo, tempo, escopo, e demais), dificultando o armazenamento em um repositório centralizado além da visualização destas de forma a apoiarem as decisões gerenciais e técnicas na tempestividade necessária aos tomadores de decisão.
+Nesse cenário cabe a pergunta: um ambiente de DWing facilita a coleta, armazenamento e visualização de métricas de gerenciais de custo, tempo e escopo? 
+Afirmações a serem alcançadas:
+\begin{itemize}
+	\item Qual uma possível solução para automatizar a coleta de métricas gerenciais de custo, tempo e escopo?
+	\item A ferramenta iceSCRUM satisfaz a utilização da técnica AgileEVM?
+	\item É possível integrar as ferramentas IceSCRUM, planilha eletrônica e Pentaho para a interpretação de métricas de gerenciamento de projeto de software?
+\end{itemize}
+
+\section{OBJETIVOS}
+
+\subsection{Objetivo Geral}
+
+\subsubsection
+Implementar uma proposta que permita a coleta automática e semiautomática de métricas de gerenciamento; o armazenamento em um repositório centralizado; além da visualização destas por meio de um painel situacional, com o apoio de um ambiente de DWing.
+
+\subsection{Objetivos Específicos}
+
+\subsubsection
+Utilizar a adaptação técnica tradicional de monitoramento de projetos, EVM, para o domínio de projetos ágeis; 
+\subsubsection
+Descrever as características do gerenciamento de projetos tradicionais e projetos ágeis;
+\subsubsection
+Diferenciar a técnica EVM tradicional da AgileEVM.
+
+
+
+
+
+
+
+
+
+
+
+
+
+

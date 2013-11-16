@@ -1,0 +1,73 @@
+\chapter*[APRESENTAÇÃO DE UM EXEMPLO DE USO DA SOLUÇÃO]{APRESENTAÇÃO DE UM EXEMPLO DE USO DA SOLUÇÃO}
+\addcontentsline{toc}{chapter}{APRESENTAÇÃO DE UM EXEMPLO DE USO DA SOLUÇÃO}
+
+O projeto consiste em coletar métricas de custo, escopo e tempo, utilizando as ferramentas IceSCRUM e Excel, em projetos ágeis de software utilizando a técnica AgileEVM transformando essas informações em conhecimento estratégia através da utilizando da ferramenta Pentaho PDI, as três ferramentas são descritas a seguir e um exemplo de uso da solução é apresentado logo em seguida.
+
+\section{FERRAMENTAS}
+
+\subsection{IceSCRUM}
+O iceSCRUM é uma ferramenta de gerenciamento de projetos de desenvolvimento de software que utiliza o framework SCRUM como base conceitual. A ferramenta inclui práticas que vêm de Kanban, como o Work In Process (WIP) para as tarefas urgentes, bem como a criação de diagramas de fluxo cumulativos. (KAGILUM, 2013)
+O IceSCRUM é uma aplicação web e se adapta perfeitamente às necessidades de equipes ágeis geograficamente distribuídas. A ferramenta ajuda a implementar as práticas ágeis principais: visão, características, histórias de usuários, a estimativa de esforço com o Planning Poker, quadro de tarefas, entre outras. O iceSCRUM é um software livre e de código aberto, disponível sob GNU Affero GPL V3, e parcialmente disponível sob LGPL v3. Usando post-it virtuais, o iceSCRUM facilita a agilidade. (KAGILUM, 2013). Encontra-se disponível para download em:  http://www.iceSCRUM.org/en/download-en/. A comunidade está ativa e a última release (R6#9) para download foi disponibilizada em 23/08/2013.
+Na ferramenta é possível criar funcionalidades, histórias de usuário associadas às funcionalidades e pode-se atribuir um valor estipulado no planning poker. Para casa história é possível criar tarefas as quais pode-se atribuir o valor em horas para a realização. A ferramenta realiza a coleta dos dados e exibi-os em diversos gráficos. (KAGILUM, 2013)
+Contudo, o IceSCRUM, não dá suporte a utilização da técnica AgileEVM.
+
+\subsection{Pentaho - PDI}
+O Pentaho Data Integration (PDI) é uma ferramenta flexível que permite coletar dados de diferentes fontes como bancos de dados, arquivos e aplicações, e transformar os dados em um formato unificado que seja acessível e relevante para os usuários finais. O PDI proporciona a extração, transformação e carregamento de dados (ETL) que facilita o processo de captura dos dados corretos, limpando-os e armazenando os dados usando um formato uniforme e consistente. (PDI, 2013)
+Pentaho Data Integration fornece suporte para dimensões de alteração lenta e chave substituta para armazenamento de dados, para população do DW; permite a migração de dados entre bancos de dados e aplicativos; é flexível o suficiente para carregar conjuntos de dados gigantes; e pode tirar proveito da nuvem, cluster, e ambientes de processamento paralelo massivo. É possível limpar os dados usando as etapas de transformação que vão do mais simples ao muito complexo. (PDI, 2013)Na (PDI, 2013)Erro: Origem da referência não encontradaé apresentada a arquitetura do Pentaho PDI. 
+O spoon é a interface do pentaho utilizada para realizar a construção de transformações (transformations, na ferramenta) e trabalhos (jobs, na ferramenta) do processo de ETL. O Data Integration Server é um servidor de dados ETL dedicado a funções de:
+Execução: execução de jobs e transformations usando o motor do PDI;
+Segurança: permite gerenciar usuários e funções de segurança, ou integrar a segurança no provedor de segurança existente;
+Gerenciamento de conteúdo: possui repositório centralizado que permite gerenciar jobs e transformations. Isso inclui uma revisão completa no histórico de conteúdos e recursos;
+Agendamento: fornece serviços de agendamento e monitoramento de atividades no PDI dentro do ambiente spoon. O Entreprise Console fornece um cliente para o gerenciamento de implementações do PDI incluindo monitorar e controlar a atividade em um servidor PDI remoto, e análise de tendências dos jobs e transformations registrados.
+
+\subsection{\color{{red}Excel}}
+O Excel é um software que permite criar tabelas, calcular e analisar dados. Este tipo de software é chamado de software de planilha eletrônica. O Excel permite criar tabelas que calculam automaticamente os totais de valores numéricos inseridos, imprimir tabelas em layouts organizados e criar gráficos. O Excel é uma parte do "Office", um conjunto de produtos combinando vários tipos de softwares para criar documentos, planilhas e apresentações, e para o gerenciamento de e-mail. (MICROSOFT, 2013)
+
+\section{EXEMPLO DE USO DA PROPOSTA}
+\subsection{Métricas de Custo em Planilha Eletrônica}
+Para registrar o valor do salário, em horas, que um profissional do time recebe (em R), foi criada uma tabela no excel. A tabela pode ser visualizada no 
+Erro: Origem da referência não encontrada.
+A tabela serve de insumo de dados para cruzar as informações de tempo e escopo, oriundas da base de dados do iceSCRUM para que seja possível utilizar a técnica AgileEVM.
+
+TABELA
+
+\subsection{Métricas de escopo e tempo na ferramenta IceSCRUM}
+Foi criado um projeto, de nome TCC, na ferramenta iceSCRUM para conhecer e se familiarizar com as funcionalidades fornecidas pela ferramenta. O projeto tem o objetivo de simular o gerenciamento de um projeto utilizando o framework SCRUM para a obtenção de dados que possam ser utilizados na técnica AgileEVM.
+A primeira coisa a ser feita, foi a criação de seis funcionalidades, como ser visto na Erro: Origem da referência não encontrada.
+Logo em seguida foi criada, seguindo o SCRUM, uma release com uma data de entrega, sendo que essa release 1 teria apenas uma Sprint, com duração de uma semana. Criou-se então a release 2 e a release 3, ambas com 2 sprints, cada uma com duração de uma semana.
+As releases e as sprints podem ser visualizadas na Erro: Origem da referência não encontrada, onde R1, R2 e R3, representam as releases 1, 2 e 3, respectivamente. Os valores #1 e #2 representam sprints. As marcações com um quadrado preenchido ( ) representam releases e ou sprints já concluídas. Já as marcadas com triângulo preenchido ( ), que estão em andamento e a com círculo preenchido ( ), é a que ainda não foram inicializadas.
+
+O passo seguinte foi a de criação de histórias de usuários e associá-las a cada umas das funcionalidades já existentes. A Erro: Origem da referência não encontrada ilustra a quantidade de histórias de usuário planejadas, em andamento e concluídas por release e Sprint.
+Para cada história de usuário criada é possível associar quantas tarefas forem necessárias para a conclusão desta. E para cada tarefa é possível associar um profissional que irá executar essa tarefa e também a quantidade de horas estimadas para a execução dessa tarefa.
+No gráfico BurnUp apresentado na Erro: Origem da referência não encontrada, é possível visualizar a quantidade de pontos total das histórias de usuários concluídas e planejadas das sprints existentes.
+Para detectar quais os campos das tabelas do banco de dados do IceSCRUM eram necessárias para a execução do projeto foi preciso realizar uma engenharia reversa, onde inicialmente foi preciso criar um projeto modelo no IceSCRUM e a cada alteração realizada no software, desde criação de logins (funcionários) até a atribuição de pontos por estória, era acompanhada a alteração nos campos e tabelas do banco de dados.
+Diante disso, as tabelas mostradas na Erro: Origem da referência não encontrada são as tabelas identificadas para que se possam extrair as métricas de custo, tempo e escopo.
+
+\subsection{Integração das Métricas de Custo, Escopo e Tempo no Pentaho PDI}
+O projeto apresentado se limita, inicialmente, a implementar, em partes, três das quatro fases apresentadas por BARBALHO (2003), citado na seção DATA WAREHOUSE COMO APOIO À ATIVIDADES DE MEDIÇÃO deste documento, sendo elas: 1) levantamento das informações; 2) modelagem multidimensional; e 3) ETL (extração, transformação e carga), nessa última se atendo apenas a extração e transformação. Sendo assim, o exemplo de uso a seguir demonstra a implementação na ferramenta Pentaho PDI – Kettle – demonstrando a extração e transformação. 
+A Erro: Origem da referência não encontrada ilustra um ambiente DWing do Pentaho BI, com as fontes de coleta definidas neste trabalho. A parte apresentada nesse projeto engloba as fontes de coleta e os processos ETL.
+
+Para a realização de uma transformação é preciso primeiro selecionar uma entrada de dados e uma saída de dados. Logo, para iniciar a implementação da transformação, foi preciso primeiro extrair as informações da tabela de funcionários constante na ferramenta Excel e salvar os dados em uma tabela de banco de dados. Os passos para a extração são mostrado a seguir na Erro: Origem da referência não encontrada.
+A ferramenta permite escolher como entrada um arquivo Excel e como saída uma tabela de banco de dados. A tabela do Excel mostrada no Quadro 6 - Profissionais foi adicionada, como pode ser visualizado na Erro: Origem da referência não encontrada, na opção de Selected files. Logo em seguida são listadas as planilhas disponíveis, como pode ser visto na Erro: Origem da referência não encontrada, onde é preciso selecionar a planilha para a criação da transformação. É possível antes de tudo, visualizar os campos da planilha, como pode ser observado na Erro: Origem da referência não encontrada.
+Para finalizar a inclusão da entrada é preciso extrair os dados da tabela clicando sobre a opção “get fields from header now”, como pode ser visualizado na Erro: Origem da referência não encontrada e por fim dizendo qual a versão do motor do Excel, como pode ser observado na Erro: Origem da referência não encontrada.
+
+Após a escolha da entrada é preciso escolher a saída dos dados e configurar as informações referentes a saída.
+A Erro: Origem da referência não encontrada é possível observar a configuração da saída, onde é preciso informar qual a conexão (connection), editando a conexão conforme a Erro: Origem da referência não encontrada, e qual a tabela alvo para armazenar os dados.
+Por fim, a transformação fica conforme a Erro: Origem da referência não encontrada.
+Outra opção de entrada é uma tabela do banco de dados, onde também será preciso passar por um configuração de conexão de banco, conforme mostrou a Erro: Origem da referência não encontrada, e também pela execução de um código SQL para a extração e transformação do dados. A Erro: Origem da referência não encontrada ilustra um exemplo no qual, após a conexão ter sido estabelecida, ocorre a junção de duas tabelas de dois banco de dados diferentes. No Quadro 7 é possível visualizar os comandos SQL utilizados para a execução da transformação.
+
+
+A demonstra a execução de um job, o qual, no caso, garante que a junção aconteça e informe que houve sucesso na execução da transformação e do job.
+Além da query do Quadro 7 - SQL da transformação com BDs as queries das métricas dos (SULAIMAN, BARTON, & BLACKBURN, 2006)Quadro 1 - Comparação dos termos do EVM. Fonte: (SULAIMAN, BARTON, & BLACKBURN, 2006) (SULAIMAN, BARTON, & BLACKBURN, 2006)Quadro 2 - Parâmetros iniciais da entrega. Fonte: (SULAIMAN, BARTON, & BLACKBURN, 2006) parte do (SULAIMAN, BARTON, & BLACKBURN, 2006)Quadro 3 - Dados de Pontos da Sprint. Fonte: (SULAIMAN, BARTON, & BLACKBURN, 2006) foram criadas e implementadas e podem ser visualizadas no apêndice do documento.
+É importante lembrar que o TCC1, este documento, explorar as fases de levantamento das necessidades, a modelagem multidimensional, e por fim o ETL, chegando ao nível do E e do T: extração e transformação. Logo, as métricas de custo e as métricas referentes à técnica de AgileEVM foram integradas e já são coletadas via ferramenta Pentaho PDI. Sendo que ao nível de carga, de consultas OLAP e visualização das informações relevantes, e também a implementação de um estudo de caso para validação da proposta só ocorrerá no TCC2.
+
+
+
+
+
+
+
+
+
+
+
